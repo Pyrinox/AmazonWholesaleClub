@@ -1,0 +1,291 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+}
+
+article {
+	display: grid;
+	grid-template-columns: [c0] 10vw [c1] auto [c2] auto [c3] 10vw [c4];
+  	grid-template-rows: [r0] 23% [r1] auto [r2] 400px [r3];
+  	grid-template-areas:
+  		"header header header header"
+  		". sections sections ."
+  		"footer footer footer footer";
+}
+
+nav {
+	opacity: .8;
+	background-color: black;
+	position: fixed;
+  	top: 0;
+  	height: calc(90px);
+  	width: 100%;
+  	z-index: 1;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+nav:first-child {
+	/*padding-left: 25px;*/
+}
+
+nav:last-child {
+	/*padding-right: 25px;*/
+	/*right: 25px;*/
+}
+
+.nav-icon {
+	padding: 25px;
+}
+
+#nav-center-spacer {
+	width: 78%;
+	height: 100%;
+}
+
+
+/* Hide the images by default */
+.inactive-image, .inactive-caption {
+  display: none;
+}
+
+.active-image {
+
+}
+
+#carousel {
+	height: 100%;
+	width: 100%;
+	/*display: flex;*/
+	/*flex-direction: column;*/
+	position: relative;
+	/*z-index: -1;*/
+	/*align-items: stretch;*/
+}
+
+#gallery {
+	position: relative;
+	background-color: grey;
+	height: 88%;
+	width: 100%;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 45%;
+	width: auto;
+	margin-top: -22px;
+	padding: 30px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	/*border-radius: 50%;*/
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 50px;
+  /*border-radius: 3px 0 0 3px;*/
+  border-radius: 100%;
+}
+
+.prev {
+	left: 50px;
+	border-radius: 100%;
+}
+
+.prev:hover, .next:hover {
+  /*background-color: rgba(0,0,0,0.8);*/
+  background-color: rgba(0,0,0,0.8);
+}
+
+.mySlides {
+	height: 100%; 
+	width: 100%; 
+	/*padding-bottom: 5vw;*/
+	object-fit: cover;
+}
+
+
+#carousel-indicator {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*z-index: 1;*/
+	bottom: 80px;
+	width: 200px;
+	margin: 0 auto;
+	/*height: 50px;*/
+	/*padding: 20px;*/
+	/*display:span;*/
+	
+	/*top:90%;*/
+	/*top: 10px;*/
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 6px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+#caption-box {
+	background-color: #f39a32;
+	width: 100%;
+	height: 10%;
+	/*flex-grow:1;*/
+	position: relative;
+	bottom:20px;
+	/*bottom: 20px;*/
+	/*bottom: 10px;*/
+	/*align-self: end;*/
+	/*position: relative;*/
+	/*bottom: 0px;*/
+
+}
+
+.active-caption {
+	display: flex;
+	direction: row;
+	height: 100%;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+
+.caption-title {
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	font-weight: 300;
+	padding-left: 10vw;
+	font-size: calc(2vw + 10px);
+
+}
+
+.caption-description {
+	font-family: 'Open Sans', sans-serif;
+	font-size: calc(5px+.5vw);
+	padding-left: 5vw;
+	max-width:55%;
+
+}
+
+.caption-text {
+	/*padding: 0px 0px 0px 8vw;*/
+	/*padding-left: 5vw;*/
+}
+
+
+
+header {
+	/*background-color: blue; */
+	grid-area: header;
+	width: 100%;
+	height: 100%;
+}
+
+
+#sections {
+	/*background-color: yellow;*/
+	grid-area: sections;
+	padding: 50px, 0px;
+
+}
+
+
+
+section {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 5px+.1vh;
+	display: flex;
+	align-items: flex-center;
+	height: auto;
+}
+
+section:first-child {
+	padding-top: 3%;
+}
+
+section:last-child {
+
+}
+
+footer {
+	background-color: green;
+	grid-area: footer;
+	width: 100%;
+	height: 100%;
+
+}
+
+.sect-img {
+	size: 20vw;
+	margin: 50px;
+	justify-self: start;
+}
+
+.text {
+	font-family: 'Open Sans', sans-serif;
+	width: 30vw;
+	height: auto;
+	/*padding-top: 5%;*/
+	text-align: justify;
+	justify-self: end;
+	
+}
+
+.subtitle {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-size: 4vw;
+	margin: 0px;
+}
