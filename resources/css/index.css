@@ -10,7 +10,7 @@ body {
 article {
 	display: grid;
 	grid-template-columns: [c0] 10vw [c1] auto [c2] auto [c3] 10vw [c4];
-  	grid-template-rows: [r0] 23% [r1] auto [r2] 400px [r3];
+  	grid-template-rows: [r0] 95vh [r1] auto [r2] 400px [r3];
   	grid-template-areas:
   		"header header header header"
   		". sections sections ."
@@ -41,6 +41,10 @@ nav:last-child {
 
 .nav-icon {
 	padding: 25px;
+}
+
+.nav-icon img {
+	cursor: pointer;
 }
 
 #nav-center-spacer {
@@ -89,23 +93,27 @@ nav:last-child {
 	border-radius: 0 3px 3px 0;
 	/*border-radius: 50%;*/
 	user-select: none;
+	background-color: rgba(0,0,0,0.8);
+	opacity: .6;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 50px;
-  /*border-radius: 3px 0 0 3px;*/
-  border-radius: 100%;
+  border-radius: 3px 0 0 3px;
+  /*border-radius: 100%;*/
 }
 
 .prev {
 	left: 50px;
-	border-radius: 100%;
+	/*border-radius: 100%;*/
+	border-radius: 3px 0 0 3px;
 }
 
 .prev:hover, .next:hover {
   /*background-color: rgba(0,0,0,0.8);*/
-  background-color: rgba(0,0,0,0.8);
+  /*background-color: rgba(0,0,0,0.8);*/
+  opacity: 1;
 }
 
 .mySlides {
@@ -178,7 +186,7 @@ nav:last-child {
 #caption-box {
 	background-color: #f39a32;
 	width: 100%;
-	height: 10%;
+	height: 12%;
 	/*flex-grow:1;*/
 	position: relative;
 	bottom:20px;
@@ -187,7 +195,10 @@ nav:last-child {
 	/*align-self: end;*/
 	/*position: relative;*/
 	/*bottom: 0px;*/
+}
 
+#caption-box:hover {
+	cursor: pointer;
 }
 
 .active-caption {
@@ -201,6 +212,7 @@ nav:last-child {
 
 
 .caption-title {
+	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	color: white;
 	font-weight: 300;
@@ -268,7 +280,8 @@ footer {
 }
 
 .sect-img {
-	size: 20vw;
+	/*size: 20vw;*/
+	height: calc(200px + 15vw);
 	margin: 50px;
 	justify-self: start;
 }
