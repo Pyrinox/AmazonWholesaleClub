@@ -10,12 +10,22 @@
 	
 	<body>
 		<nav>
-			<div class="nav-icon"><img onclick="openURL('https://www.google.com')" src="resources/images/hamburger.png"></div>
-			<div class="nav-icon"><img src="resources/images/logo.png"></div>
+			<div class="nav-icon"><img onclick="toggleHamburger()" src="resources/images/hamburger.png"></div>
+			<div class="nav-icon"><img onclick="openURL('https://www.aboutamazon.com')" src="resources/images/logo.png"></div>
 			<div id="nav-center-spacer"></div>
 			<div class="nav-icon"><img src="resources/images/magnifying-glass.png"></div>
 			<div class="nav-icon"><img src="resources/images/arrow.png"></div>
 			
+			<div id="hamburger">
+				<div onclick="openURL('https://www.aboutamazon.com/our-company')" class='hamburger-content'>About Amazon</div>
+				<div onclick="openURL('https://www.aboutamazon.com/innovation')" class='hamburger-content'>Innovation</div>
+				<div onclick="openURL('https://www.aboutamazon.com/job-creation-and-investment')" class='hamburger-content'>Job creation and investment</div>
+				<div onclick="openURL('https://www.aboutamazon.com/our-communities')" class='hamburger-content'>Our communities</div>
+				<div onclick="openURL('https://www.aboutamazon.com/supporting-small-businesses')" class='hamburger-content'>Supporting small businesses</div>
+				<div onclick="openURL('https://www.aboutamazon.com/sustainability')" class='hamburger-content'>Sustainability</div>
+				<div onclick="openURL('https://www.aboutamazon.com/working-at-amazon')" class='hamburger-content'>Working at Amazon</div>
+				<div onclick="openURL('https://www.aboutamazon.com/amazon-fulfillment')" class='hamburger-content'>Amazon Fulfillment</div>
+			</div>
 		</nav>
 		<article>
 			<header>
@@ -58,11 +68,11 @@
 						</div>
 						<div class="caption fade inactive-caption">
 							<div class="caption-title caption-text">Building a Community</div>
-							<div class="caption-description caption-text">Buy the same products you love, with even better deals. Experience same day deliveries and returns. Buy from your local stores, and explore our monthly exhibits.</div>
+							<div class="caption-description caption-text">Buy from your local stores and artists by exploring our monthly exhibits and stalls.</div>
 						</div>
 						<div class="caption fade inactive-caption">
-							<div class="caption-title caption-text">Lorem ipsum  </div>
-							<div class="caption-description caption-text">Lorem ipsum dolor sit amet, consectetuer adipiscing Lorem ipsum dolor sit amet, consectetuer adipiscing Lorem ipsum dolo</div>
+							<div class="caption-title caption-text">Increasing Productivity</div>
+							<div class="caption-description caption-text">Buy the same products you love in person, with even better deals, or experience same day deliveries and returns.</div>
 						</div>
 					</div>
 
@@ -72,44 +82,130 @@
 			<div id="sections">
 				<section id="s1">
 					<div class="text">
-						<h2 class="subtitle">The Initiative</h2>
-						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-</p>
+						<h2 class="subtitle">Our Initiative</h2>
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
 					</div>
-					<img class ="sect-img" src="resources/images/initiative.jpeg">
+					<div class="img-container">
+						<img class ="sect-img" src="resources/images/initiative.jpeg">
+					</div>
 				</section>
 
 				<section id="s2">
-					<img class ="sect-img" src="https://m.media-amazon.com/images/I/41UqZEoLeLL._AC_UL436_.jpg">
+					<div class="img-container">
+						<img class ="sect-img" src="resources/images/art fair.jpg">
+					</div>
 					<div class="text">
-						<h2 class="subtitle">The Initiative</h2>
-						<p> aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre</p>
+						<h2 class="subtitle">Building a Community</h2>
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
 					</div>
 				</section>
 				<section id="s3">
 					<div class="text">
-						<h2 class="subtitle">The Initiative</h2>
-						<p> aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre</p>
+						<h2 class="subtitle">Increasing Sustainability</h2>
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
 					</div>
-					<img class ="sect-img" src="https://m.media-amazon.com/images/I/41UqZEoLeLL._AC_UL436_.jpg">
+					<div class="img-container">
+						<img class ="sect-img" src="resources/images/amazon sustainability.jpeg">
+					</div>
 				</section>
 				<section id="s4">
-					<img class ="sect-img" src="https://m.media-amazon.com/images/I/41UqZEoLeLL._AC_UL436_.jpg">
+					<div class="img-container">
+						<img class ="sect-img" src="resources/images/amazon localization cropped.jpeg">
+					</div>
 					<div class="text">
-						<h2 class="subtitle">The Initiative</h2>
-						<p> aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre</p>
+						<h2 class="subtitle">Localizing Productivity</h2>
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
 					</div>
 				</section>
 				<section id="s5">
 					<div class="text">
-						<h2 class="subtitle">The Initiative</h2>
-						<p> aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre aierst aeristniretn sreta esntre</p>
+						<h2 class="subtitle">Our Values</h2>
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
 					</div>
-					<img class ="sect-img" src="https://m.media-amazon.com/images/I/41UqZEoLeLL._AC_UL436_.jpg">
+				<div class="img-container">
+					<img class ="sect-img" src="resources/images/amazon values 3.jpeg">
+				</div>
 				</section>	
 			</div>
-			<footer>aeirstnrsient</footer>	
+			<div id="media-buttons">
+
+			</div>
+			<footer>
+				<div id='c1' class="footer-col">
+					<div>ABOUT AMAZON</div>
+					<div>Learn more about Amazon</div>
+					<div>Our Innovations</div>
+					<div>Investing in the U.S.</div>
+					<div>Investors</div>
+					<div>Newsletter</div>
+					<div>Press center</div>
+					<div>Privacy</div>
+					<div>Select awards and recognition</div>
+					<div>Tour Amazon's headquarters</div>
+				</div>
+				<div id='c2' class="footer-col">
+					<div>INNOVATION</div>
+					<div>Our innovations</div>
+					<div>Research</div>
+				</div>
+				<div id='c3' class="footer-col">
+					<div>JOB CREATION & INVESTMENT</div>
+					<div>Job creation and investment</div>
+				</div>
+				<div id='c4' class="footer-col">
+					<div>OUR COMMUNITIES</div>
+					<div>Amazon in the community</div>
+					<div>Computer science and STEM education</div>
+					<div>Hunger, homelessness, and disaster relief</div>
+				</div>
+				<div id='c5' class="footer-col">
+					<div>SMALL BUSINESS</div>
+					<div>How we support small businesses</div>
+					<div>Small business impact report</div>
+					<div>Success stories</div>
+					<div>Advice for small business owners</div>
+					<div>Amazon in Arlington</div>
+					<div>Amazon in Nashville</div>
+				</div>
+				<div id='c6' class="footer-col">
+					<div>WORKING AT AMAZON</div>
+					<div>Explore working at Amazon</div>
+					<div>Amazon offices</div>
+					<div>Diversity and inclusion</div>
+					<div>Get to know us</div>
+					<div>Opportunities for veterans</div>
+					<div>Our culture</div>
+					<div>Preparing for your interview</div>
+					<div>Upskilling 2025</div>
+					<div>Jobs at Amazon</div>
+				</div>
+				<div id='c7' class="footer-col">
+					<div>AMAZON FULFILLMENT</div>
+					<div>Explore Amazon Fulfillment</div>
+					<div>Amazon Transportation</div>
+					<div>Our fulfillment centers</div>
+					<div>Our innovation</div>
+					<div>Working here</div>
+					<div>Military hiring</div>
+					<div>Community impact</div>
+					<div>FAQs</div>
+					<div>Amazon Fulfillment Center Tours</div>
+				</div>
+				<div id='c8' class="footer-col">
+					<div>SUSTAINABILITY</div>
+					<div>Amazon and sustainability</div>
+					<div>AWS sustainability</div>
+					<div>Circular economy</div>
+					<div>Energy and environment</div>
+					<div>Packaging</div>
+					<div>Responsible sourcing</div>
+					<div>Sustainability partnerships</div>
+					<div>Sustainability Question Bank</div>
+				</div>
+			</footer>	
+			<div id="misc">
+				
+			</div>
 		</article>
 	</body>
 

@@ -44,3 +44,11 @@ async function openURL (url) {
   window.location.href = url;
 }
 
+function toggleHamburger() {
+  var x = document.getElementById("hamburger");
+  if (x.style.display === "none" || x.style.display == '') {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+}
